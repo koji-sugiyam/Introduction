@@ -2,8 +2,8 @@ package com.chapter3;
 
 interface ThirdTermTwoInterface{
 	
-	String interfaceMessage = "インターフェースのオリジナルメッセージだよん";
+	String interfaceMessage = "「インターフェースのオリジナルメッセージだよん」";
 	
-	String say(String interfaceMessage);
+	String say(String message);
 	
 }

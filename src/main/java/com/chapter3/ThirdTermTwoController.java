@@ -12,6 +12,8 @@ import com.chapter3.UserInfo;
 @EnableAutoConfiguration
 public class ThirdTermTwoController implements ThirdTermTwoInterface {
 
+	protected String message = "親での初期値。";
+	
 	//spring
     public static void main(String[] args) throws Exception {
         SpringApplication.run(ThirdTermTwoController.class, args);
@@ -37,18 +39,14 @@ public class ThirdTermTwoController implements ThirdTermTwoInterface {
 		
 		//3-2-7
 		//インターフェース
+		System.out.println("インターフェースの定数は" + interfaceMessage);
+		
+		message = "親から呼んでます。";
+		say(message);
 		
 		return "ThirdTermTwoController";
     }
 
-	
-	
-	@Override
-	public String say(String interfaceMessage) {
-		
-		System.out.println(interfaceMessage);
-		return interfaceMessage;
-	}
 
 	
 
@@ -75,6 +73,19 @@ public class ThirdTermTwoController implements ThirdTermTwoInterface {
 		System.out.println("name4 = " + sugiyama4.getName() + " age4 = " + sugiyama4.getAge());
 		
 	}
+	
+	
+
+	@Override
+	public String say(String message) {
+
+		System.out.println(message);
+		return message;
+	}
+	
+
+	
+	
 
 
 }
