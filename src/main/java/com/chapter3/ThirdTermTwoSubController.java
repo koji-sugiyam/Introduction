@@ -24,7 +24,7 @@ public class ThirdTermTwoSubController extends ThirdTermTwoController {
 		System.out.println("親クラスの「say()」を呼び出します。");
 		
 
-		System.out.println("インターフェースの定数は" + interfaceMessage);
+		System.out.println("インターフェースの定数は" + INTERFACE_MESSAGE);
 		
 		
 		//そのまま親クラスの関数を実行

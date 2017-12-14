@@ -39,7 +39,7 @@ public class ThirdTermTwoController implements ThirdTermTwoInterface {
 		
 		//3-2-7
 		//インターフェース
-		System.out.println("インターフェースの定数は" + interfaceMessage);
+		System.out.println("インターフェースの定数は" + INTERFACE_MESSAGE);
 		
 		message = "親から呼んでます。";
 		say(message);
