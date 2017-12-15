@@ -21,7 +21,6 @@ public class ThirdTermThreeController {
         SpringApplication.run(ThirdTermThreeController.class, args);
     }
 
-  
 
 	@RequestMapping("/")
     @ResponseBody
