@@ -1,0 +1,94 @@
+package com.chapter4_3;
+
+
+import org.springframework.boot.*;
+import org.springframework.boot.autoconfigure.*;
+import org.springframework.stereotype.*;
+import org.springframework.web.bind.annotation.*;
+
+import com.chapter4_3.BaseController;
+import com.chapter4_3.FourthTermThreeService;
+
+@Controller
+@EnableAutoConfiguration
+public class FourthTermThreeController extends BaseController {
+
+    //spring
+    public static void main(String... args) throws Exception {
+        SpringApplication.run(FourthTermThreeController.class, args);
+    }
+
+
+	@RequestMapping("/")
+    @ResponseBody
+    String home() {
+
+		FourthTermThreeService service = new FourthTermThreeService();
+		
+		//まずは軽く復習
+		service.lambda();
+		
+		//4-3-1
+		//Listインターフェース
+		/*
+		 * add ：　要素追加
+		 * addAll ：　指定したコレクションのすべての要素を追加
+		 * set ：　要素上書き
+		 * remove ：　削除
+		 * removeAll ：　指定したコレクションに含まれるすべての要素を削除する
+		 * retainAll　：　　　　　　　〃　　　　一致しないすべての要素を　〃　　　　　　
+		 * clear　：　すべての要素削除
+		 * 
+		 * get : 取得（obj-cのobjectAtIndex）
+		 * size : 要素の数を取得（obj-Cのcount）
+		 * isEmpty : 空の判定
+		 * subList : 範囲内の要素の取得　list.sublist(0,4)
+		 * toArray : 配列に変換
+		 * contains : 引数の要素が含まれているか。　返り値：true / false
+		 * containsAll : 引数に渡したコレクションの要素がすべて含まれているか　返り値：true / false
+		 * indexOf : 指定した引数の要素が最初に見つかった位置
+		 * lastIndexOf : 指定した引数の要素が最後に見つかった位置
+		 * 
+		 * iterator : 繰り返し処理に使うイテレーター
+		 * listIterator : 前方処理や変更もできるイテレーター
+		 * 
+		 * クラス名
+		 * ArrayList　：配列を持つ
+		 * LinkedArrayList : 要素の順番を保持してくれる
+		 * CopyOnWriteArrayList : ArrayListのスレッドセーフ化
+		 * 
+		 */
+		
+		
+		//4-3-2
+		service.makeList();
+		
+		//4-3-3
+		service.listMethodTest();
+		
+		//4-3-4
+		service.listSort();
+		
+		//4-3-5
+		service.listSearch();
+		
+		//4-3-6
+		service.listInteration();
+		
+		
+		return service.CONTROLLER_NAME;
+
+    }
+
+
+	
+
+
+	
+}
+
+
+
+
+
+
