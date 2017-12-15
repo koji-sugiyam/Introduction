@@ -74,6 +74,19 @@ public class FourthTermThreeController extends BaseController {
 		
 		//4-3-6
 		service.listInteration();
+		service.listInterationDelete();
+		
+		//4-3-7
+		//4-3-8
+		//テキストを読む
+		/*
+		 * メモ
+		 * 
+		 * ArrayList   : index指定での、要素の「取得」「変更」「末尾への追加/削除」が高速。　「途中の要素の追加/削除」が遅い。値の取得向き
+		 * LinkedArray : 前後のリンク情報を持っているため、「途中の要素の追加/削除」が高速。しかしindex指定での、要素の「取得」「変更」。ループ処理向き
+		 * CopyOnWriteArrayList : スレッドセーフになるが、いちいち配列のコピーを作成するため全性能が遅くなる。
+		 */
+		
 		
 		
 		return service.CONTROLLER_NAME;

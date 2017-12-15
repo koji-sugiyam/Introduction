@@ -16,5 +16,7 @@ public interface FourthTermThreeInterface {
 	
 	public void listInteration();
 	
+	public void listInterationDelete();
+	
 	
 }

@@ -5,6 +5,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.Iterator;
 
 import lombok.Data;
 
@@ -194,14 +195,73 @@ public class FourthTermThreeService implements FourthTermThreeInterface {
 		list.add("B");
 		list.add("C");
 		list.add("D");
+		list.add("E");
+		list.add("F");
 		
+		//拡張for
 		for(String str : list) {
 			System.out.println(str);
 		}
 		System.out.println("-");
 		
 		//ラムダ
-		list.forEach(v->System.out.println(v));
+		list.forEach(v->{
+			System.out.println(v);
+		});
+		
+		System.out.println("-----");
+		
+	}
+	
+	
+	
+	public void listInterationDelete() {
+
+		System.out.println("//listInteration");
+		
+		List<String> list1 = new ArrayList<>();
+		list1.add("A");
+		list1.add("B");
+		list1.add("C");
+		list1.add("D");
+		list1.add("E");
+		list1.add("F");
+		list1.add("G");
+		
+		//for 従来だと
+		for(int i=0; i<list1.size(); i++) {
+			String str = list1.get(i);
+			//BCD削除したい場合
+			if(str == "B" || str == "D" || str == "F") {
+				System.out.println("削除する文字は"+str);
+				list1.remove(i);
+			}
+			i++;
+		}
+		System.out.println("結果"+list1); //[A, B, C, D, E, F, G] ループ中は削除できない
+		System.out.println("-");
+		
+		
+		//Iteratorなら
+		List<String> list2 = new ArrayList<>();
+		list2.add("A");
+		list2.add("B");
+		list2.add("C");
+		list2.add("D");
+		list2.add("E");
+		list2.add("F");
+		list2.add("G");
+		Iterator<String> iterator = list2.iterator();
+		
+		while(iterator.hasNext()) { //hasNextは次があった場合true
+
+			String str = iterator.next();
+			if(str == "B" || str == "D" || str == "F") {
+				System.out.println("削除する文字は"+str);
+				iterator.remove();
+			}
+		}
+		System.out.println("結果"+list2); //[A, C, E, G] 削除された
 		
 		System.out.println("-----");
 		
