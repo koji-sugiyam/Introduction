@@ -2,7 +2,7 @@ package com.chapter4_3;
 
 public interface FourthTermThreeInterface {
 	
-	static final String CONTROLLER_NAME = "FourthTermThreeService";
+	static final String CONTROLLER_NAME = "FourthTermThreeController";
 	
 	public void lambda();
 	
