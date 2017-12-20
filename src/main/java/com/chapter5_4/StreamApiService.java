@@ -161,6 +161,8 @@ public class StreamApiService implements StreamApiInterface {
 		
 	}
 	
+	//移動テスト
+	
 	
 	
 }
