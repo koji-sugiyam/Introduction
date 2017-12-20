@@ -172,6 +172,7 @@ public class ThirdTermFourController {
 		
 		list.forEach(e -> System.out.println(e));
 	}
+	
 }
 
 
