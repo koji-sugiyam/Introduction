@@ -9,7 +9,7 @@ import java.nio.file.Paths;
 
 public class ExceptionController {
 
-	 public void main(String[] args) throws IOException {
+	 public static void main(String[] args) throws IOException {
 	    	
 		//6-1-1
 		//例外の３つの種類
@@ -47,11 +47,11 @@ public class ExceptionController {
     
 
 	
-	public void firstAction() throws IOException {
+	public static void firstAction() throws IOException {
 			
 		byte[] contents = new byte[100];
 		InputStream is = null;
-		Path path = Paths.get("Exception.txt");
+		Path path = Paths.get("C:\\Developer\\Introduction\\src\\main\\java\\com\\chapter6\\Exception.txt");
 		try {
 			//例外が発生するコードを含む処理
 			is = Files.newInputStream(path);
@@ -115,10 +115,10 @@ public class ExceptionController {
 
 
 		
-	public void secondAction() throws IOException {
+	public static void secondAction() throws IOException {
 
 		byte[] contents = new byte[100];
-		Path path = Paths.get("Exception.txt");
+		Path path = Paths.get("C:\\Developer\\Introduction\\src\\main\\java\\com\\chapter6\\Exception.txt");
 		
 		//java7以降では
 		//(2)try～with～resource
