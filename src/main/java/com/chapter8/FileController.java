@@ -1,9 +1,6 @@
 package com.chapter8;
 
 
-import java.io.IOException;
-import java.io.UnsupportedEncodingException;
-
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.stereotype.Controller;

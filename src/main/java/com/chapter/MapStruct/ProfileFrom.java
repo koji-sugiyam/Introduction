@@ -6,7 +6,7 @@ import lombok.Data;
 public class ProfileFrom {
 	
     protected String name;
-    protected int age;
+    protected Integer age;
     protected String location;
     
 

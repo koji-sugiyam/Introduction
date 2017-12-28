@@ -1,18 +1,12 @@
 package com.chapter4_5;
 
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
 import java.util.Collections;
-import java.util.HashMap;
 import java.util.HashSet;
 import java.util.LinkedHashSet;
 import java.util.List;
-import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
-import java.lang.*;
-import java.util.Collection;
 
 public class FourthTermFiveService extends FourthTermFiveAbstract {
 	

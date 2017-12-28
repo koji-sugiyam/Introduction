@@ -2,7 +2,6 @@ package com.chapter4_3_review;
 
 import java.util.ArrayList;
 import java.util.Iterator;
-import java.lang.String;
 
 
 public class FourthTermThreeReviewService extends FourthTermThreeReviewAbstract {
