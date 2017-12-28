@@ -49,6 +49,7 @@ public class MapStructController{
 		System.out.println(profile.getLocation()); // アメリカ合衆国
 		
 
+		
 	}
 	
 	
