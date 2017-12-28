@@ -8,6 +8,12 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 
+import com.chapter.MapStruct.ProfileFrom;
+import com.chapter.MapStruct.Profile;
+
+import com.chapter.MapStruct.ProfileMapper;
+
+
 @Controller
 @RestController
 @EnableAutoConfiguration

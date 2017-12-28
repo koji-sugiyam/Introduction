@@ -5,6 +5,8 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.stream.Stream;
 
+import com.chapter5.Student;
+
 public class StreamApiService extends StreamApiAbstract implements StreamApiInterface {
 
 	//使用するStudentクラスはimportしておく
